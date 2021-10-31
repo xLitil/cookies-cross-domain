@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            fetch('https://localhost.b:3000/cookie',{
+                credentials: "include"
+            })
+            .then(response => response.json())
+            .then(data => console.log("Response from localhost.b", data));
+        </script>
+    </head>
+    <body>
+        <h1>Hello world !</h1>
+    </body>
+</html>
